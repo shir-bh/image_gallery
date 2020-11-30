@@ -1,0 +1,114 @@
+  #load{
+    position:fixed;
+    left: 45%;
+    top: 35%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #d0e9e3;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0%  { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scroller-container{
+    display: flex;
+  flex-direction: row;
+}
+.flex-container {
+    flex-wrap: wrap;
+    padding-left: 12rem;
+    white-space: nowrap;
+    display: flex;
+    background-color: white;
+    overflow-x: auto;
+    width: 95%;
+}
+.small-image{
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    transition: .5s ease;
+}
+.small-image:hover{
+  opacity: 0.3;
+}
+ .pic-footer{
+    text-align: center;
+    margin-top: -7rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+ .modal-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0.7);
+    z-index: 10;
+
+  }
+  .bottomcenter {
+    bottom: 8px;
+    left: 25px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+  }
+
+
+  @keyframes blur {
+    90% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+    }
+    30% {
+      -webkit-filter: blur(30px);
+      -moz-filter: blur(30px);
+      -o-filter: blur(30px);
+      -ms-filter: blur(30px);
+    }
+  }
+  .modal-content {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation-name: blur;
+    animation-duration: 1s;
+  }
+  p{
+    color: #0E6655;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .app-header{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #A2D9CE;
+    text-align: center;
+  }
+
